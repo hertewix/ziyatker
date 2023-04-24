@@ -1,2 +1,0 @@
-# ziyatker
-school porject
