@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Аминистраторы</title>
+    </head>
+    <body>
+        Новые заявки:<br>
+        {{#each newbies}}
+            {{#with this}}
+                <div>
+                    ID: {{id}} <br>
+                    Имя: {{name}} <br>
+                    Возраст: {{age}} <br>
+                    Кружок: {{section}} <br>
+                    Номер телефона: {{number}} (Позвоните) <br>
+                    Филиал: {{branch}} <br>
+                    <a href="/approve?id={{id}}">Принять</a>
+                </div>
+            {{/with}}
+        {{/each}}
+        
+    </body>
+</html>
