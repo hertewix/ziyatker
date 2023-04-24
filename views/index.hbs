@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Образовательный центр Зияткер</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+      <div style="font-size: 30px">
+        Образовательный центр Зияткер
+      </div><br><br>
+      Сеть образовательных центров «Зияткер» ведёт подготовительные занятия для детей в возрасте от 7 до 16 лет в нескольких кружках:<br><br>
+      <ol style="margin-left: 20px">
+        <li>Вокал</li>
+        <li>Робтотехника</li>
+        <li>Живопись</li>
+      </ol><br>
+      В разных микрорайонах города функционирует три филиала образовательного центра:
+      <div class="table">
+        <div class="row">
+          <div class="item">Номер филиала</div>
+          <div class="item">Микрорайон</div>
+        </div>
+        <div class="row">
+          <div class="item">1</div>
+          <div class="item">Южный</div>
+        </div>
+        <div class="row">
+          <div class="item">2</div>
+          <div class="item">Северный</div>
+        </div>
+        <div class="row">
+          <div class="item">3</div>
+          <div class="item">Западный</div>
+        </div>
+      </div>
+      <br><br><br>
+      <b style="color: red">{{error}}</b><br><br>
+      <form method="post" action="/new">
+          <label>Имя:</label><br>
+          <input type="text" name="name"><br>
+          <label>Возраст:</label><br>
+          <input type="number" name="age"><br>
+          <label>Кружок:</label><br>
+          <input type="number" name="section"><br>
+          <label>Номер телефона:</label><br>
+          <input type="text" name="number"><br>
+          <label>Филиал:</label><br>
+          <input type="number" name="branch"><br><br>
+          <button type="submit">Отправить заявку</button>
+      </form>
+      <br><br>
+      <b>{{message}}</b>
+    </div>
+  </body>
+</html>
